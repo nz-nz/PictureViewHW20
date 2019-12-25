@@ -138,3 +138,5 @@ function createElems (list) {
 //         $('.bigger').removeClass('bigger');
 //     })
 // });
+
+createElems(listt);
