@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 10vh;
+    /*padding: 10px;*/
+    background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );
+}
+
+.searchPic{
+    height: 50px;
+    width: 260px;
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    color: white;
+}
+
+.formFooter{
+    height: 40px;
+    width: 40%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input{
+    flex-grow: 2;
+}
+
+#root{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30vw);
+    grid-gap: 2vw;
+    grid-auto-rows: 30vw;
+    margin: 6vw;
+}
+
+.gridItem{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.picCard{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.dark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bigger{
+    position: absolute;
+    top: 0;
+    left: -1vw;
+    background-position: center;
+    background-size: cover;
+    width: 30vw;
+    height: 31vw;
+    z-index: 2;
+}
+
+.btn{
+    position: fixed;
+    bottom: .5vw;
+    right: .5vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: coral;
+}
