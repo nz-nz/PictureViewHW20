@@ -87,3 +87,19 @@ input{
     border-radius: 50%;
     background-color: coral;
 }
+
+@media screen and (max-width: 1100px){
+    #root{
+        margin: 0.5vw;
+    }
+    .bigger{
+        position: absolute;
+        top: 0;
+        left: -0.5vw;
+        background-position: center;
+        background-size: cover;
+        width: 33vw;
+        height: 33vw;
+        z-index: 2;
+    }
+}
